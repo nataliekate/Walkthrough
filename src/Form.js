@@ -25,7 +25,7 @@ class Form extends Component {
       this.props.handleSubmit(this.state);
       this.setState(this.initialState);
     } else {
-      document.getElementById("alertMessage").style.display = "";
+      alert("Please input person's name and job");
     }
   };
 
