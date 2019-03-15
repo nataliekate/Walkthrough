@@ -33,36 +33,31 @@ class Form extends Component {
     const { name, job } = this.state;
 
     return (
-      <div className="container">
-        <div id="alertMessage" className="alert alert-danger" role="alert">
-          A simple danger alert—check it out!
-        </div>
-        <form>
-          <div className="form-group">
-            <label>Name</label>
-            <input
-              className="form-control"
-              type="text"
-              name="name"
-              value={name}
-              onChange={this.handleChange}/>
-          </div>
-          <div className="form-group">
-            <label>Job</label>
-            <input
-              className="form-control"
-              type="text"
-              name="job"
-              value={job}
-              onChange={this.handleChange} />
-          </div>
+      <form>
+        <div className="form-group">
+          <label>Name</label>
           <input
-            type="button"
-            value="Submit"
-            class="btn btn-primary"
-            onClick={this.submitForm} />
-        </form>
-      </div>
+            className="form-control"
+            type="text"
+            name="name"
+            value={name}
+            onChange={this.handleChange}/>
+        </div>
+        <div className="form-group">
+          <label>Job</label>
+          <input
+            className="form-control"
+            type="text"
+            name="job"
+            value={job}
+            onChange={this.handleChange} />
+        </div>
+        <input
+          type="button"
+          value="Submit"
+          class="btn btn-primary"
+          onClick={this.submitForm} />
+      </form>
     )
   };
 }

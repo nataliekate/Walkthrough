@@ -6,7 +6,7 @@ class App extends Component {
   };
 
   componentDidMount(){
-    const url = "https://en.wikipedia.org/w/api.php?action=opensearch&search=React&format=json&origin=*";
+    const url = "https://en.wikipedia.org/w/api.php?action=opensearch&search=javascript&format=json&origin=*";
 
     fetch(url)
       .then(result => result.json())
